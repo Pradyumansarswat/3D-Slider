@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+
+            <div class="item" style="--position: 1"> <img
+                    src="https://i.pinimg.com/564x/15/a2/c1/15a2c1eeb335985509fb44d7e39e073a.jpg" alt="1"> </div>
+            <div class="item" style="--position: 2"> <img
+                    src="https://i.pinimg.com/564x/c8/74/ff/c874ffc7754f585fd424761180ce48c8.jpg"
+                    alt="2"> </div>
+            <div class="item" style="--position: 3"> <img
+                    src="https://i.pinimg.com/736x/dc/8c/46/dc8c462d1ddbb2736689b697fe35b9b6.jpg" alt="3"> </div>
+            <div class="item" style="--position: 4"> <img
+                    src="https://i.pinimg.com/736x/75/72/9b/75729be22bda49b3d6e570935633f356.jpg"
+                    alt="4"></div>
+            <div class="item" style="--position: 5"> <img
+                    src="https://i.pinimg.com/564x/9a/d7/91/9ad7918a2096717afd477ce9e07f5ad2.jpg"
+                    alt="5"></div>
+            <div class="item" style="--position: 6"> <img
+                    src="https://i.pinimg.com/564x/40/30/9b/40309b8b401b7a53ccffd1e932a39339.jpg"
+                    alt="6"></div>
+            <div class="item" style="--position: 7"> <img
+                    src="https://i.pinimg.com/564x/84/c4/15/84c415b36f3399a4016c448c82388dfe.jpg"
+                    alt="7"></div>
+            <div class="item" style="--position: 8"> <img
+                    src="https://i.pinimg.com/564x/b1/ba/e1/b1bae1b55f8bc28307ef76db83051f65.jpg"
+                    alt="8"></div>
+            <div class="item" style="--position: 9"> <img
+                    src="https://i.pinimg.com/564x/77/db/3d/77db3df91de8f4fcade5b207a11a835f.jpg" alt="9">
+            </div>
+            <div class="item" style="--position: 10"> <img
+                    src="https://i.pinimg.com/564x/fd/3f/c2/fd3fc21220eea0e17157ded4a7a9e02f.jpg"
+                    alt="10"></div>
+        </div>
+        <div class="content">       
+        <div class="author">
+            <h2>Pradyuman Sarswat</h2>
+            <p><b>Web Design</b></p>
+        </div>
+        <div class="model"></div>
+    </div>
+    </div>
+</body>
+
+</html>
